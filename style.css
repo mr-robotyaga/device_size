@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(fxVE.gif);
+    background-color: black;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    flex-direction: column;
+}
+
+.title {
+    color: azure;
+    font-size: 80px;
+    font-family: "helsinki";
+}
+
+.first {
+    font-size: 50px;
+    color: azure;
+    font-family: "helsinki";
+}
+
+.second {
+    font-size: 50px;
+    color: azure;
+    font-family: "helsinki";
+}
+
+#width, #height {
+    margin-left: 20px;
+}
+
+@font-face {
+    font-family: "helsinki";
+    src: url(helsinki.ttf);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 50%;
+    }
+
+    .title {
+        font-size: 7vw;
+    }
+
+    .first {
+        font-size: 5vw;
+    }
+
+    .second {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    body {
+        background-size: 90%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 8vw;
+    }
+
+    .first {
+        font-size: 7vw;
+    }
+
+    .second {
+        font-size: 7vw;
+    }
+}
